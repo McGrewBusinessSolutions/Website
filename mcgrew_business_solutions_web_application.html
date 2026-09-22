@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McGrew Business Solutions | Practical Small Business Consulting & Operations Help - Mesa & Phoenix East Valley</title>
+    
+    <!-- Meta Descriptions & SEO -->
+    <meta name="description" content="McGrew Business Solutions helps small business owners in Mesa, Gilbert, Chandler, Tempe, Scottsdale & remote with operations, business analytics, spreadsheets, workflow processes, and growth systems. Founded by Mark McGrew.">
+    <meta name="keywords" content="small business consultant Arizona, small business consulting Mesa AZ, business operations consultant, business analytics consulting Phoenix, small business systems, process improvement">
+    <meta name="author" content="Mark McGrew">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mcgrewbusinesssolutions.com/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="McGrew Business Solutions | Hands-On Help for Small Business Owners">
+    <meta property="og:description" content="You know your business. I help with the business side of it. Practical help with operations, numbers, spreadsheets, scheduling, and processes.">
+    <meta property="og:url" content="https://mcgrewbusinesssolutions.com/">
+    <meta property="og:site_name" content="McGrew Business Solutions">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#080d1a',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Structured Data (JSON-LD for Local Business) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "McGrew Business Solutions",
+      "founder": {
+        "@type": "Person",
+        "name": "Mark McGrew"
+      },
+      "description": "Practical, hands-on help for small business owners with operations, business analytics, data modeling, spreadsheets, and process development.",
+      "url": "https://mcgrewbusinesssolutions.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mesa",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Mesa, AZ",
+        "Gilbert, AZ",
+        "Chandler, AZ",
+        "Tempe, AZ",
+        "Scottsdale, AZ",
+        "Phoenix, AZ",
+        "Remote / United States"
+      ],
+      "priceRange": "Free Initial Conversation"
+    }
+    </script>
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .bg-grid-pattern {
+            background-size: 30px 30px;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo Wordmark -->
+                <a href="#home" class="flex flex-col group focus:outline-none">
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-wider text-white group-hover:text-emerald-400 transition-colors uppercase">
+                        McGrew
+                    </span>
+                    <span class="text-[10px] sm:text-xs tracking-[0.25em] text-slate-400 font-semibold uppercase group-hover:text-slate-300">
+                        BUSINESS SOLUTIONS
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#how-i-can-help" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">How I Can Help</a>
+                    <a href="#how-it-works" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">How It Works</a>
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">About Mark</a>
+                    <a href="#calculator" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Time Estimator</a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-all focus:ring-2 focus:ring-emerald-400">
+                        Let's Talk
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" class="p-2 rounded-md text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-950 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#how-i-can-help" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-navy-800">How I Can Help</a>
+            <a href="#how-it-works" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-navy-800">How It Works</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-navy-800">About Mark</a>
+            <a href="#calculator" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-navy-800">Time Estimator</a>
+            <a href="#contact" class="mobile-nav-link block w-full text-center px-5 py-3 rounded-lg text-base font-semibold text-white bg-emerald-600 hover:bg-emerald-500 mt-2">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- HERO SECTION -->
+        <section class="relative bg-navy-900 text-white overflow-hidden py-16 sm:py-24 lg:py-28">
+            <div class="absolute inset-0 opacity-10 bg-grid-pattern pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    
+                    <!-- Trust Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-800/90 text-emerald-400 border border-slate-700/80 mb-6">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+                        <span>Free initial business conversation • No upfront commitment</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                        Your business has problems to solve. <span class="text-emerald-400 block sm:inline">Let's work on them.</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-8">
+                        McGrew Business Solutions provides practical, hands-on help to small-business owners with operations, analytics, processes, growth, and the business projects that never seem to get done.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all text-center focus:ring-2 focus:ring-emerald-400">
+                            Tell Me What's Going On
+                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                        </a>
+                        <a href="#how-i-can-help" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-800 hover:text-white border border-slate-700 transition-all text-center">
+                            See How I Can Help
+                        </a>
+                    </div>
+
+                    <!-- Local Presence Subtext -->
+                    <div class="mt-10 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-400">
+                        <span class="flex items-center gap-1.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+                            Based in Phoenix East Valley (Mesa, Gilbert, Chandler, Tempe, Scottsdale)
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i data-lucide="laptop" class="w-4 h-4 text-emerald-400"></i>
+                            Available locally in-person or remotely anywhere in the US
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YOU DON'T NEED A GIANT CONSULTING FIRM -->
+        <section class="py-16 sm:py-20 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+                        You don't need a giant consulting firm.
+                    </h2>
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                        Many small business owners are tradespeople, doctors, service providers, or creators who are masters of their craftsmanship. But as the business grows, administrative tasks, spreadsheets, scheduling headaches, and data chaos start taking over.
+                    </p>
+                </div>
+
+                <!-- Comparison Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Traditional Consulting Card -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="x-circle" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Traditional High-Priced Consulting</h3>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="minus" class="w-4 h-4 text-red-500 mt-0.5 shrink-0"></i>
+                                <span>Expensive retainer models designed for big corporations.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="minus" class="w-4 h-4 text-red-500 mt-0.5 shrink-0"></i>
+                                <span>Hands you a massive PDF binder of suggestions and leaves you to build it.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="minus" class="w-4 h-4 text-red-500 mt-0.5 shrink-0"></i>
+                                <span>Over-complicated corporate jargon ("exponential growth transformation").</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="minus" class="w-4 h-4 text-red-500 mt-0.5 shrink-0"></i>
+                                <span>Pushes expensive enterprise software you don't actually need.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hands-on Partner Card -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-navy-900 text-white shadow-xl relative overflow-hidden border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Hands-On Partner (McGrew Business Solutions)</h3>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>No upfront commitment. Accessible, straightforward support when you need it.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Rolls up sleeves alongside you to build the spreadsheets, setup tools, and fix workflows.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Grounded, honest, practical communication without consultant buzzwords.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Focuses on simple, effective solutions that match your actual business size.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ideal Businesses Served -->
+                <div class="mt-12 pt-8 border-t border-slate-100">
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Businesses I Frequently Assist:</p>
+                    <div class="flex flex-wrap gap-2 sm:gap-3">
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">HVAC & Home Services</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Contractors & Trades</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Dental & Medical Practices</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Local Service Providers</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Small Retail Shops</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Early-Stage Startups</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700">Owner-Operated Teams</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHAT CAN I HELP WITH? (SERVICES & INTERACTIVE SELECTOR) -->
+        <section id="how-i-can-help" class="py-16 sm:py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Practical Areas of Support</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 mb-4">What Can I Help With?</h2>
+                    <p class="text-base sm:text-lg text-slate-600">
+                        These are not rigid consulting packages. They are real examples of problems we can tackle together.
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap justify-center gap-2 mb-10" id="category-tabs">
+                    <button data-target="all" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold bg-navy-900 text-white shadow-sm transition-all">All Capabilities</button>
+                    <button data-target="ops" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition-all">Operations & Processes</button>
+                    <button data-target="numbers" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition-all">Numbers & Analytics</button>
+                    <button data-target="growth" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition-all">Growth & Customers</button>
+                    <button data-target="org" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition-all">Business Organization</button>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16" id="services-grid">
+                    
+                    <!-- Card 1: Operations -->
+                    <div class="service-card ops bg-white p-6 rounded-2xl border border-slate-200 hover:border-emerald-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-navy-900 flex items-center justify-center mb-4">
+                            <i data-lucide="sliders" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Operations & Processes</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Documenting key business processes</li>
+                            <li>• Improving day-to-day workflows</li>
+                            <li>• Organizing scheduling systems</li>
+                            <li>• Standard Operating Procedures (SOPs)</li>
+                            <li>• Identifying operational bottlenecks</li>
+                            <li>• Software tool research & setup</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Numbers & Analytics -->
+                    <div class="service-card numbers bg-white p-6 rounded-2xl border border-slate-200 hover:border-emerald-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-navy-900 flex items-center justify-center mb-4">
+                            <i data-lucide="bar-chart-3" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Numbers & Analytics</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Custom Excel & Google Sheets models</li>
+                            <li>• Clean business dashboards</li>
+                            <li>• KPI tracking & development</li>
+                            <li>• Revenue and cost/margin analysis</li>
+                            <li>• Basic cash flow forecasting</li>
+                            <li>• Pricing evaluation & margin checks</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Growth & Customers -->
+                    <div class="service-card growth bg-white p-6 rounded-2xl border border-slate-200 hover:border-emerald-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-navy-900 flex items-center justify-center mb-4">
+                            <i data-lucide="trending-up" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Growth & Customers</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Lead tracking systems</li>
+                            <li>• Sales funnel organization</li>
+                            <li>• Customer follow-up processes</li>
+                            <li>• Client retention analysis</li>
+                            <li>• Local market & competitor research</li>
+                            <li>• Evaluating marketing ROI</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4: Business Organization -->
+                    <div class="service-card org bg-white p-6 rounded-2xl border border-slate-200 hover:border-emerald-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-navy-900 flex items-center justify-center mb-4">
+                            <i data-lucide="folder-kanban" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Business Organization</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Hiring research & process setup</li>
+                            <li>• Defining roles & responsibilities</li>
+                            <li>• Project management structure</li>
+                            <li>• Business software selection</li>
+                            <li>• Turning ideas into actionable plans</li>
+                            <li>• Organizing digital files & records</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Grounded Note Box -->
+                <div class="bg-navy-900 text-white p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 max-w-2xl">
+                        <h4 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-emerald-400"></i>
+                            Have a business problem that isn't listed here?
+                        </h4>
+                        <p class="text-sm text-slate-300">
+                            Send it anyway. If I can help, I'll tell you how. If I can't, I'll tell you that too — no sugarcoating or wasted time.
+                        </p>
+                    </div>
+                    <a href="#contact" class="shrink-0 px-6 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all">
+                        Ask Mark About Your Issue
+                    </a>
+                </div>
+
+                <!-- INTERACTIVE COMMON FRUSTRATION CHECKLIST -->
+                <div class="mt-16 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">Common Frustration Checklist</h3>
+                    <p class="text-sm text-slate-600 mb-6">Select any issues that sound familiar to prepopulate your initial inquiry form below:</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="frustration-list">
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="Our scheduling & dispatching is a mess" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"Our scheduling & dispatching is a mess."</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="I don't really know which services/products make us money" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"I don't really know which services/products make us money."</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="We need a better way to track incoming leads" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"We need a better way to track incoming leads."</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="Our spreadsheets are terrible or disorganized" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"Our spreadsheets are terrible or disorganized."</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="I need to hire someone but don't know where to start" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"I need to hire someone but don't know where to start."</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all">
+                            <input type="checkbox" value="We're growing fast and everything feels disorganized" class="frustration-cb rounded text-emerald-600 focus:ring-emerald-500 mt-1">
+                            <span class="text-sm text-slate-700 font-medium">"We're growing fast and everything feels disorganized."</span>
+                        </label>
+                    </div>
+
+                    <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
+                        <span id="selected-count-badge" class="text-xs font-semibold text-slate-500">0 items selected</span>
+                        <button id="prepopulate-btn" type="button" class="px-5 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold transition-all flex items-center gap-2">
+                            <span>Get Help With These Items</span>
+                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS (3 SIMPLE STEPS) -->
+        <section id="how-it-works" class="py-16 sm:py-24 bg-white border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Straightforward Process</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 mb-4">How It Works</h2>
+                    <p class="text-base sm:text-lg text-slate-600">
+                        Low friction, zero pressure, and complete transparency from day one.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    
+                    <!-- Step 1 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 font-extrabold text-xl flex items-center justify-center mb-6 shadow-sm">
+                                1
+                            </div>
+                            <h3 class="text-xl font-bold text-navy-900 mb-3">Tell Me The Problem</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Fill out the brief form below. Explain what's happening, what's frustrating you, or what business goal is currently stuck.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60 text-xs font-medium text-slate-500">
+                            Takes less than 2 minutes
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 font-extrabold text-xl flex items-center justify-center mb-6 shadow-sm">
+                                2
+                            </div>
+                            <h3 class="text-xl font-bold text-navy-900 mb-3">We'll Talk</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                We'll have an initial conversation (phone or video) to understand your business, clarify the details, and determine whether I can actually help.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60 text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                            <i data-lucide="check" class="w-4 h-4"></i> 100% Free Initial Conversation
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 font-extrabold text-xl flex items-center justify-center mb-6 shadow-sm">
+                                3
+                            </div>
+                            <h3 class="text-xl font-bold text-navy-900 mb-3">We Figure Out Next Steps</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                For a quick issue, I may point you in the right direction for free. For larger projects, we'll clearly define the scope and agree on pricing before any paid work begins.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60 text-xs font-medium text-slate-500">
+                            No surprise fees or mandatory retainers
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT MARK MCGREW -->
+        <section id="about" class="py-16 sm:py-24 bg-navy-900 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Bio Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800 text-emerald-400 text-xs font-semibold border border-slate-700">
+                            Founder & Principal
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Hi, I'm Mark McGrew.
+                        </h2>
+                        
+                        <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                            My professional background is rooted in business data analytics, revenue analytics, sales analytics, and business operations.
+                        </p>
+
+                        <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                            In my career, my focus has been on analyzing revenue streams, understanding customer behavior, tracking retention, measuring KPIs, and building clean reporting that turns messy data into clear, actionable decisions.
+                        </p>
+
+                        <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                            What I enjoy most is the broader problem-solving side of business: stepping into a situation, figuring out how it currently works, pinpointing where things are breaking down, researching solutions, building a practical system, and verifying that it actually worked.
+                        </p>
+
+                        <!-- Key Philosophy Callout -->
+                        <div class="p-6 rounded-xl bg-slate-800/90 border-l-4 border-emerald-500 my-6">
+                            <p class="text-sm sm:text-base text-slate-200 italic font-medium">
+                                "You're the expert in your trade or service. I bring an outside analytical perspective, business tools, data skills, and the hands-on time to tackle the problems you haven't been able to finish."
+                            </p>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all">
+                                Connect With Mark
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Box / Stats Cards -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80 space-y-4">
+                            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i>
+                                What You Can Expect
+                            </h3>
+                            <div class="space-y-3 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-emerald-400 mt-2 shrink-0"></div>
+                                    <p><strong class="text-white">Grounded Communication:</strong> Plain English explanations, no corporate buzzwords.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-emerald-400 mt-2 shrink-0"></div>
+                                    <p><strong class="text-white">Hands-on Execution:</strong> Building sheets, setting up tools, and configuring systems yourself or alongside you.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-emerald-400 mt-2 shrink-0"></div>
+                                    <p><strong class="text-white">Data-Driven Logic:</strong> Decisions backed by your real numbers, not guesswork.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-200 text-xs leading-relaxed">
+                            <span class="font-bold text-white block mb-1">Local & Accessible</span>
+                            Based in Mesa, Arizona, serving the broader Phoenix East Valley area in-person, as well as working remotely with small businesses across the United States.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE SMALL BUSINESS BOTTLENECK & TIME CALCULATOR -->
+        <section id="calculator" class="py-16 sm:py-20 bg-slate-100 border-b border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Interactive Tool</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-1">Small Business Time & Chaos Estimator</h2>
+                    <p class="text-sm sm:text-base text-slate-600 mt-2">
+                        Estimate how much time and money operational drag might be costing your team each month.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                    
+                    <!-- Slider 1 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-bold text-slate-800">Hours spent weekly on manual scheduling, spreadsheets, or fix-ups:</label>
+                            <span id="hours-val" class="text-base font-extrabold text-emerald-600">8 hrs/week</span>
+                        </div>
+                        <input type="range" id="hours-range" min="1" max="30" value="8" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600">
+                    </div>
+
+                    <!-- Slider 2 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-bold text-slate-800">Estimated value of owner / staff time ($/hour):</label>
+                            <span id="rate-val" class="text-base font-extrabold text-emerald-600">$50 / hr</span>
+                        </div>
+                        <input type="range" id="rate-range" min="25" max="200" step="5" value="50" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600">
+                    </div>
+
+                    <!-- Output Summary -->
+                    <div class="p-6 rounded-xl bg-navy-900 text-white grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold uppercase">Estimated Monthly Time Cost</span>
+                            <div id="monthly-hours" class="text-2xl sm:text-3xl font-extrabold text-white mt-1">34.6 Hours</div>
+                            <span class="text-[11px] text-slate-400">Lost to repetitive admin & manual tracking</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold uppercase">Estimated Operational Cost</span>
+                            <div id="monthly-cost" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-1">$1,733 / month</div>
+                            <span class="text-[11px] text-slate-400">Value of capacity lost each month</span>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-500 text-center italic">
+                        *This estimate illustrates opportunity cost. Streamlining even half of these bottlenecks pays dividends immediately.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LEAD FORM SECTION -->
+        <section id="contact" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">No Upfront Commitment</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 mb-3">Tell Me What's Going On</h2>
+                    <p class="text-base text-slate-600 max-w-2xl mx-auto">
+                        Fill out the form below to start a conversation. No high-pressure sales calls, no obligation. Let me know what you're working through and let's see if I can help.
+                    </p>
+                </div>
+
+                <!-- Intake Form Container -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-lg relative">
+                    
+                    <form id="lead-form" class="space-y-6" novalidate>
+                        
+                        <!-- Anti-spam Honeypot (Hidden) -->
+                        <div class="hidden" aria-hidden="true">
+                            <input type="text" name="website_hp" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            
+                            <!-- Name -->
+                            <div>
+                                <label for="full_name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Your Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="full_name" required placeholder="e.g., Mark McGrew" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <span class="text-xs text-red-500 hidden" id="err-name">Please enter your name.</span>
+                            </div>
+
+                            <!-- Business Name -->
+                            <div>
+                                <label for="business_name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Business Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="business_name" required placeholder="e.g., Apex HVAC Services" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <span class="text-xs text-red-500 hidden" id="err-business">Please enter your business name.</span>
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" required placeholder="name@yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <span class="text-xs text-red-500 hidden" id="err-email">Please enter a valid email.</span>
+                            </div>
+
+                            <!-- Phone (Optional) -->
+                            <div>
+                                <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Phone Number <span class="text-slate-400 font-normal">(Optional)</span>
+                                </label>
+                                <input type="tel" id="phone" placeholder="(480) 555-0199" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            
+                            <!-- Website (Optional) -->
+                            <div class="sm:col-span-1">
+                                <label for="business_website" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Website <span class="text-slate-400 font-normal">(Optional)</span>
+                                </label>
+                                <input type="text" id="business_website" placeholder="yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                            </div>
+
+                            <!-- Type of Business -->
+                            <div class="sm:col-span-1">
+                                <label for="business_type" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Type of Business
+                                </label>
+                                <select id="business_type" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                    <option value="Trades/Contractor">Trades / Contracting</option>
+                                    <option value="Home Services">Home Services (HVAC, Plumbing, etc.)</option>
+                                    <option value="Medical/Dental">Medical / Dental Practice</option>
+                                    <option value="Local Service">Local Service Business</option>
+                                    <option value="Retail">Small Retail</option>
+                                    <option value="Startup">Early-Stage Startup</option>
+                                    <option value="Other">Other Owner-Operated Business</option>
+                                </select>
+                            </div>
+
+                            <!-- Team Size (Optional) -->
+                            <div class="sm:col-span-1">
+                                <label for="team_size" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                    Team Size <span class="text-slate-400 font-normal">(Optional)</span>
+                                </label>
+                                <select id="team_size" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                    <option value="Just me (Owner-operator)">Just me (Owner-operator)</option>
+                                    <option value="2-5 employees">2 - 5 employees</option>
+                                    <option value="6-15 employees">6 - 15 employees</option>
+                                    <option value="16+ employees">16+ employees</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <!-- Problem Description -->
+                        <div>
+                            <label for="problem_desc" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                What are you trying to fix, improve, or figure out? <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="problem_desc" rows="4" required placeholder="Describe what's going on. e.g., 'Our scheduling is messy, spreadsheets are out of date, and I don't know which jobs are actually profitable.'" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white"></textarea>
+                            <span class="text-xs text-red-500 hidden" id="err-problem">Please briefly describe what's happening.</span>
+                        </div>
+
+                        <!-- Blockers Description -->
+                        <div>
+                            <label for="blockers_desc" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                What's getting in the way right now? <span class="text-slate-400 font-normal">(Optional)</span>
+                            </label>
+                            <input type="text" id="blockers_desc" placeholder="e.g., Lack of time, wrong software, disorganized data, need extra hands..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                        </div>
+
+                        <!-- Preferred Contact Method -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                Preferred Contact Method
+                            </label>
+                            <div class="flex flex-wrap gap-6 text-sm text-slate-700">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="contact_pref" value="Email" checked class="text-emerald-600 focus:ring-emerald-500">
+                                    <span>Email</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="contact_pref" value="Phone Call" class="text-emerald-600 focus:ring-emerald-500">
+                                    <span>Phone Call</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="contact_pref" value="Text Message" class="text-emerald-600 focus:ring-emerald-500">
+                                    <span>Text Message</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all flex items-center justify-center gap-2">
+                                <span>Let's Talk About It</span>
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </button>
+                            <p class="text-center text-xs text-slate-500 mt-3">
+                                No obligation. Initial conversation is free. I respond personally within 24 hours.
+                            </p>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- SUBMISSION CONFIRMATION MODAL -->
+    <div id="confirmation-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-slate-800 relative">
+            
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
+                <i data-lucide="check" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-navy-900 mb-2">Message Received!</h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                Thank you for reaching out, <span id="confirm-name" class="font-bold text-slate-800"></span>. I'll review your details about <span id="confirm-business" class="font-bold text-slate-800"></span> and follow up via <span id="confirm-method" class="font-bold text-slate-800"></span> shortly.
+            </p>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 space-y-2 mb-6">
+                <div class="font-bold text-slate-800">Summary of Inquiry:</div>
+                <p id="confirm-summary" class="italic text-slate-700 bg-white p-2.5 rounded border border-slate-200"></p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="copy-summary-btn" type="button" class="flex-1 px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
+                    <i data-lucide="copy" class="w-4 h-4"></i>
+                    <span>Copy Submission</span>
+                </button>
+                <button id="close-modal-btn" type="button" class="flex-1 px-4 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-semibold text-xs transition-all">
+                    Back to Website
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800/80">
+                
+                <!-- Col 1: Brand -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex flex-col">
+                        <span class="text-lg font-extrabold text-white uppercase tracking-wider">McGrew</span>
+                        <span class="text-[10px] tracking-[0.2em] text-slate-400 font-semibold uppercase">BUSINESS SOLUTIONS</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-md">
+                        Practical, hands-on help for small business owners with operations, analytics, processes, spreadsheets, and business systems. Grounded and honest support.
+                    </p>
+                    <div class="text-xs text-slate-400 pt-2">
+                        Founder: Mark McGrew
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-white uppercase tracking-wider block mb-2">Quick Navigation</span>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="#how-i-can-help" class="hover:text-emerald-400 transition-colors">How I Can Help</a></li>
+                        <li><a href="#how-it-works" class="hover:text-emerald-400 transition-colors">How It Works</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">About Mark</a></li>
+                        <li><a href="#calculator" class="hover:text-emerald-400 transition-colors">Time Estimator</a></li>
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-colors">Let's Talk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Local Communities Served -->
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-white uppercase tracking-wider block mb-2">Primary Service Areas</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Phoenix East Valley, Arizona including:
+                    </p>
+                    <p class="text-xs text-slate-400">
+                        Mesa • Gilbert • Chandler • Tempe • Scottsdale • Phoenix • Remote Support Nationwide
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>&copy; <span id="year"></span> McGrew Business Solutions. All rights reserved.</p>
+                <p class="text-slate-400">McGrewBusinessSolutions.com</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Set current year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Initialize Lucide Icons
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            mobileBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Service Category Filter Tabs
+            const catBtns = document.querySelectorAll('.cat-btn');
+            const serviceCards = document.querySelectorAll('.service-card');
+
+            catBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const target = this.getAttribute('data-target');
+
+                    catBtns.forEach(b => {
+                        b.classList.remove('bg-navy-900', 'text-white');
+                        b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                    });
+
+                    this.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                    this.classList.add('bg-navy-900', 'text-white');
+
+                    serviceCards.forEach(card => {
+                        if (target === 'all' || card.classList.contains(target)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Common Frustration Checklist -> Intake Form Prepopulation
+            const frustrationCbs = document.querySelectorAll('.frustration-cb');
+            const prepopulateBtn = document.getElementById('prepopulate-btn');
+            const selectedCountBadge = document.getElementById('selected-count-badge');
+            const problemDescInput = document.getElementById('problem_desc');
+
+            function updateFrustrationBadge() {
+                const checked = document.querySelectorAll('.frustration-cb:checked');
+                selectedCountBadge.textContent = `${checked.length} item${checked.length === 1 ? '' : 's'} selected`;
+            }
+
+            frustrationCbs.forEach(cb => {
+                cb.addEventListener('change', updateFrustrationBadge);
+            });
+
+            prepopulateBtn.addEventListener('click', function() {
+                const checked = document.querySelectorAll('.frustration-cb:checked');
+                if (checked.length === 0) {
+                    alert("Please check at least one frustration item above, or scroll directly to the form.");
+                    return;
+                }
+
+                const selectedTexts = Array.from(checked).map(cb => `• ${cb.value}`).join('\n');
+                problemDescInput.value = `We need help with the following areas:\n${selectedTexts}`;
+                
+                // Smooth scroll to lead form
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // Interactive Bottleneck Calculator Logic
+            const hoursRange = document.getElementById('hours-range');
+            const rateRange = document.getElementById('rate-range');
+            const hoursVal = document.getElementById('hours-val');
+            const rateVal = document.getElementById('rate-val');
+            const monthlyHoursOut = document.getElementById('monthly-hours');
+            const monthlyCostOut = document.getElementById('monthly-cost');
+
+            function calculateBottleneck() {
+                const hours = parseFloat(hoursRange.value);
+                const rate = parseFloat(rateRange.value);
+
+                hoursVal.textContent = `${hours} hrs/week`;
+                rateVal.textContent = `$${rate} / hr`;
+
+                const monthlyHours = (hours * 4.33).toFixed(1);
+                const monthlyCost = Math.round(hours * 4.33 * rate);
+
+                monthlyHoursOut.textContent = `${monthlyHours} Hours`;
+                monthlyCostOut.textContent = `$${monthlyCost.toLocaleString()} / mo`;
+            }
+
+            hoursRange.addEventListener('input', calculateBottleneck);
+            rateRange.addEventListener('input', calculateBottleneck);
+            calculateBottleneck();
+
+            // Form Validation & Submission Handler
+            const leadForm = document.getElementById('lead-form');
+            const modal = document.getElementById('confirmation-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const copySummaryBtn = document.getElementById('copy-summary-btn');
+
+            let lastSubmittedData = {};
+
+            leadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Clear errors
+                document.getElementById('err-name').classList.add('hidden');
+                document.getElementById('err-business').classList.add('hidden');
+                document.getElementById('err-email').classList.add('hidden');
+                document.getElementById('err-problem').classList.add('hidden');
+
+                const fullName = document.getElementById('full_name').value.trim();
+                const businessName = document.getElementById('business_name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const website = document.getElementById('business_website').value.trim();
+                const businessType = document.getElementById('business_type').value;
+                const teamSize = document.getElementById('team_size').value;
+                const problemDesc = document.getElementById('problem_desc').value.trim();
+                const blockersDesc = document.getElementById('blockers_desc').value.trim();
+                const contactPref = document.querySelector('input[name="contact_pref"]:checked').value;
+
+                let isValid = true;
+
+                if (!fullName) {
+                    document.getElementById('err-name').classList.remove('hidden');
+                    isValid = false;
+                }
+
+                if (!businessName) {
+                    document.getElementById('err-business').classList.remove('hidden');
+                    isValid = false;
+                }
+
+                if (!email || !email.includes('@')) {
+                    document.getElementById('err-email').classList.remove('hidden');
+                    isValid = false;
+                }
+
+                if (!problemDesc) {
+                    document.getElementById('err-problem').classList.remove('hidden');
+                    isValid = false;
+                }
+
+                if (!isValid) return;
+
+                // Save last submitted payload
+                lastSubmittedData = {
+                    fullName,
+                    businessName,
+                    email,
+                    phone,
+                    website,
+                    businessType,
+                    teamSize,
+                    problemDesc,
+                    blockersDesc,
+                    contactPref,
+                    timestamp: new Date().toISOString()
+                };
+
+                // Store submission in localStorage for persistence
+                try {
+                    const existingInquiries = JSON.parse(localStorage.getItem('mcgrew_inquiries') || '[]');
+                    existingInquiries.push(lastSubmittedData);
+                    localStorage.setItem('mcgrew_inquiries', JSON.stringify(existingInquiries));
+                } catch(err) {
+                    console.log('Local storage save skipped', err);
+                }
+
+                // Populate modal details
+                document.getElementById('confirm-name').textContent = fullName;
+                document.getElementById('confirm-business').textContent = businessName;
+                document.getElementById('confirm-method').textContent = contactPref;
+                document.getElementById('confirm-summary').textContent = problemDesc;
+
+                // Show Modal
+                modal.classList.remove('hidden');
+            });
+
+            closeModalBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                leadForm.reset();
+            });
+
+            copySummaryBtn.addEventListener('click', function() {
+                const textToCopy = `INQUIRY SUMMARY (McGrew Business Solutions)\nName: ${lastSubmittedData.fullName}\nBusiness: ${lastSubmittedData.businessName}\nEmail: ${lastSubmittedData.email}\nPhone: ${lastSubmittedData.phone || 'N/A'}\nPreferred Contact: ${lastSubmittedData.contactPref}\n\nProblem Statement:\n${lastSubmittedData.problemDesc}`;
+                
+                const tempTextArea = document.createElement('textarea');
+                tempTextArea.value = textToCopy;
+                document.body.appendChild(tempTextArea);
+                tempTextArea.select();
+                try {
+                    document.execCommand('copy');
+                    alert('Submission details copied to clipboard!');
+                } catch(err) {
+                    console.error('Failed to copy', err);
+                }
+                document.body.removeChild(tempTextArea);
+            });
+
+        });
+    </script>
+</body>
+</html>
