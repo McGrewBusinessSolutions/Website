@@ -70,6 +70,7 @@
       },
       "description": "Practical, hands-on help for small business owners with operations, business analytics, data modeling, spreadsheets, and process development.",
       "url": "https://mcgrewbusinesssolutions.com",
+      "email": "Mark@McGrewBusinessSolutions.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Mesa",
@@ -109,14 +110,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <!-- Logo Wordmark -->
-                <a href="#home" class="flex flex-col group focus:outline-none">
-                    <span class="text-xl sm:text-2xl font-extrabold tracking-wider text-white group-hover:text-emerald-400 transition-colors uppercase">
-                        McGrew
-                    </span>
-                    <span class="text-[10px] sm:text-xs tracking-[0.25em] text-slate-400 font-semibold uppercase group-hover:text-slate-300">
-                        BUSINESS SOLUTIONS
-                    </span>
+                <!-- Logo & Brand Header -->
+                <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="flex items-center justify-center bg-white p-1 rounded-lg border border-slate-700 shadow-sm shrink-0">
+                        <img src="logo.png" alt="McGrew Business Solutions Logo" class="h-10 sm:h-11 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('nav-logo-fallback').classList.remove('hidden');">
+                        <div id="nav-logo-fallback" class="hidden w-9 h-9 rounded bg-navy-900 text-emerald-400 font-extrabold flex items-center justify-center text-xl">
+                            M
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg sm:text-xl font-extrabold tracking-wider text-white group-hover:text-emerald-400 transition-colors uppercase leading-none">
+                            McGrew
+                        </span>
+                        <span class="text-[9px] sm:text-[10px] tracking-[0.22em] text-slate-400 font-semibold uppercase group-hover:text-slate-300 mt-1">
+                            BUSINESS SOLUTIONS
+                        </span>
+                    </div>
                 </a>
 
                 <!-- Desktop Menu -->
@@ -536,10 +545,14 @@
                             </p>
                         </div>
 
-                        <div class="pt-2">
+                        <div class="pt-2 flex flex-wrap items-center gap-4">
                             <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all">
                                 Connect With Mark
                                 <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                            <a href="mailto:Mark@McGrewBusinessSolutions.com" class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-all border border-slate-700">
+                                <i data-lucide="send" class="w-4 h-4 text-emerald-400"></i>
+                                Mark@McGrewBusinessSolutions.com
                             </a>
                         </div>
                     </div>
@@ -640,17 +653,21 @@
                     <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">No Upfront Commitment</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 mb-3">Tell Me What's Going On</h2>
                     <p class="text-base text-slate-600 max-w-2xl mx-auto">
-                        Fill out the form below to start a conversation. No high-pressure sales calls, no obligation. Let me know what you're working through and let's see if I can help.
+                        Fill out the form below to start a conversation. You can also email directly at <a href="mailto:Mark@McGrewBusinessSolutions.com" class="text-emerald-600 font-semibold underline hover:text-emerald-700">Mark@McGrewBusinessSolutions.com</a>.
                     </p>
                 </div>
 
                 <!-- Intake Form Container -->
                 <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-lg relative">
                     
-                    <form id="lead-form" class="space-y-6" novalidate>
+                    <!-- Form Action configured to route directly to Mark@McGrewBusinessSolutions.com -->
+                    <form id="lead-form" action="https://formspree.io/f/Mark@McGrewBusinessSolutions.com" method="POST" class="space-y-6" novalidate>
                         
-                        <!-- Anti-spam Honeypot (Hidden) -->
+                        <!-- Anti-spam Honeypot & Configuration Fields -->
+                        <input type="hidden" name="_replyto" id="hidden_replyto">
+                        <input type="hidden" name="_subject" value="New Inquiry - McGrew Business Solutions Website">
                         <div class="hidden" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
                             <input type="text" name="website_hp" tabindex="-1" autocomplete="off">
                         </div>
 
@@ -661,7 +678,7 @@
                                 <label for="full_name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Your Name <span class="text-red-500">*</span>
                                 </label>
-                                <input type="text" id="full_name" required placeholder="e.g., Mark McGrew" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <input type="text" id="full_name" name="full_name" required placeholder="e.g., Mark McGrew" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                                 <span class="text-xs text-red-500 hidden" id="err-name">Please enter your name.</span>
                             </div>
 
@@ -670,7 +687,7 @@
                                 <label for="business_name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Business Name <span class="text-red-500">*</span>
                                 </label>
-                                <input type="text" id="business_name" required placeholder="e.g., Apex HVAC Services" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <input type="text" id="business_name" name="business_name" required placeholder="e.g., Apex HVAC Services" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                                 <span class="text-xs text-red-500 hidden" id="err-business">Please enter your business name.</span>
                             </div>
 
@@ -683,7 +700,7 @@
                                 <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Email Address <span class="text-red-500">*</span>
                                 </label>
-                                <input type="email" id="email" required placeholder="name@yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <input type="email" id="email" name="email" required placeholder="name@yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                                 <span class="text-xs text-red-500 hidden" id="err-email">Please enter a valid email.</span>
                             </div>
 
@@ -692,7 +709,7 @@
                                 <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Phone Number <span class="text-slate-400 font-normal">(Optional)</span>
                                 </label>
-                                <input type="tel" id="phone" placeholder="(480) 555-0199" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <input type="tel" id="phone" name="phone" placeholder="(480) 555-0199" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                             </div>
 
                         </div>
@@ -704,7 +721,7 @@
                                 <label for="business_website" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Website <span class="text-slate-400 font-normal">(Optional)</span>
                                 </label>
-                                <input type="text" id="business_website" placeholder="yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <input type="text" id="business_website" name="business_website" placeholder="yourbusiness.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                             </div>
 
                             <!-- Type of Business -->
@@ -712,7 +729,7 @@
                                 <label for="business_type" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Type of Business
                                 </label>
-                                <select id="business_type" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <select id="business_type" name="business_type" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                                     <option value="Trades/Contractor">Trades / Contracting</option>
                                     <option value="Home Services">Home Services (HVAC, Plumbing, etc.)</option>
                                     <option value="Medical/Dental">Medical / Dental Practice</option>
@@ -728,7 +745,7 @@
                                 <label for="team_size" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                     Team Size <span class="text-slate-400 font-normal">(Optional)</span>
                                 </label>
-                                <select id="team_size" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                                <select id="team_size" name="team_size" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                                     <option value="Just me (Owner-operator)">Just me (Owner-operator)</option>
                                     <option value="2-5 employees">2 - 5 employees</option>
                                     <option value="6-15 employees">6 - 15 employees</option>
@@ -743,7 +760,7 @@
                             <label for="problem_desc" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                 What are you trying to fix, improve, or figure out? <span class="text-red-500">*</span>
                             </label>
-                            <textarea id="problem_desc" rows="4" required placeholder="Describe what's going on. e.g., 'Our scheduling is messy, spreadsheets are out of date, and I don't know which jobs are actually profitable.'" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white"></textarea>
+                            <textarea id="problem_desc" name="problem_desc" rows="4" required placeholder="Describe what's going on. e.g., 'Our scheduling is messy, spreadsheets are out of date, and I don't know which jobs are actually profitable.'" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white"></textarea>
                             <span class="text-xs text-red-500 hidden" id="err-problem">Please briefly describe what's happening.</span>
                         </div>
 
@@ -752,7 +769,7 @@
                             <label for="blockers_desc" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                                 What's getting in the way right now? <span class="text-slate-400 font-normal">(Optional)</span>
                             </label>
-                            <input type="text" id="blockers_desc" placeholder="e.g., Lack of time, wrong software, disorganized data, need extra hands..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
+                            <input type="text" id="blockers_desc" name="blockers_desc" placeholder="e.g., Lack of time, wrong software, disorganized data, need extra hands..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-slate-800 text-sm bg-white">
                         </div>
 
                         <!-- Preferred Contact Method -->
@@ -776,14 +793,14 @@
                             </div>
                         </div>
 
-                        <!-- Submit Button -->
-                        <div>
+                        <!-- Submit Buttons & Options -->
+                        <div class="space-y-3">
                             <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all flex items-center justify-center gap-2">
-                                <span>Let's Talk About It</span>
+                                <span>Send Message to Mark</span>
                                 <i data-lucide="send" class="w-5 h-5"></i>
                             </button>
-                            <p class="text-center text-xs text-slate-500 mt-3">
-                                No obligation. Initial conversation is free. I respond personally within 24 hours.
+                            <p class="text-center text-xs text-slate-500">
+                                No obligation. Initial conversation is free. I respond personally to <strong class="text-slate-700">Mark@McGrewBusinessSolutions.com</strong> within 24 hours.
                             </p>
                         </div>
 
@@ -832,17 +849,26 @@
             
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800/80">
                 
-                <!-- Col 1: Brand -->
-                <div class="md:col-span-2 space-y-3">
-                    <div class="flex flex-col">
-                        <span class="text-lg font-extrabold text-white uppercase tracking-wider">McGrew</span>
-                        <span class="text-[10px] tracking-[0.2em] text-slate-400 font-semibold uppercase">BUSINESS SOLUTIONS</span>
+                <!-- Col 1: Brand & Logo -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center justify-center bg-white p-1 rounded-lg border border-slate-700 shrink-0">
+                            <img src="logo.png" alt="McGrew Business Solutions Logo" class="h-9 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('footer-logo-fallback').classList.remove('hidden');">
+                            <div id="footer-logo-fallback" class="hidden w-8 h-8 rounded bg-navy-900 text-emerald-400 font-extrabold flex items-center justify-center text-lg">
+                                M
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-base font-extrabold text-white uppercase tracking-wider leading-none">McGrew</span>
+                            <span class="text-[9px] tracking-[0.2em] text-slate-400 font-semibold uppercase mt-0.5">BUSINESS SOLUTIONS</span>
+                        </div>
                     </div>
                     <p class="text-slate-400 text-xs leading-relaxed max-w-md">
                         Practical, hands-on help for small business owners with operations, analytics, processes, spreadsheets, and business systems. Grounded and honest support.
                     </p>
-                    <div class="text-xs text-slate-400 pt-2">
-                        Founder: Mark McGrew
+                    <div class="text-xs text-slate-300 space-y-1">
+                        <div><strong class="text-white">Founder:</strong> Mark McGrew</div>
+                        <div><strong class="text-white">Email:</strong> <a href="mailto:Mark@McGrewBusinessSolutions.com" class="text-emerald-400 hover:underline">Mark@McGrewBusinessSolutions.com</a></div>
                     </div>
                 </div>
 
@@ -898,15 +924,17 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-            mobileBtn.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.add('hidden');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
                 });
-            });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
 
             // Service Category Filter Tabs
             const catBtns = document.querySelectorAll('.cat-btn');
@@ -949,19 +977,21 @@
                 cb.addEventListener('change', updateFrustrationBadge);
             });
 
-            prepopulateBtn.addEventListener('click', function() {
-                const checked = document.querySelectorAll('.frustration-cb:checked');
-                if (checked.length === 0) {
-                    alert("Please check at least one frustration item above, or scroll directly to the form.");
-                    return;
-                }
+            if (prepopulateBtn) {
+                prepopulateBtn.addEventListener('click', function() {
+                    const checked = document.querySelectorAll('.frustration-cb:checked');
+                    if (checked.length === 0) {
+                        alert("Please check at least one frustration item above, or scroll directly to the form.");
+                        return;
+                    }
 
-                const selectedTexts = Array.from(checked).map(cb => `• ${cb.value}`).join('\n');
-                problemDescInput.value = `We need help with the following areas:\n${selectedTexts}`;
-                
-                // Smooth scroll to lead form
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-            });
+                    const selectedTexts = Array.from(checked).map(cb => `• ${cb.value}`).join('\n');
+                    problemDescInput.value = `We need help with the following areas:\n${selectedTexts}`;
+                    
+                    // Smooth scroll to lead form
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
 
             // Interactive Bottleneck Calculator Logic
             const hoursRange = document.getElementById('hours-range');
@@ -972,6 +1002,8 @@
             const monthlyCostOut = document.getElementById('monthly-cost');
 
             function calculateBottleneck() {
+                if (!hoursRange || !rateRange) return;
+
                 const hours = parseFloat(hoursRange.value);
                 const rate = parseFloat(rateRange.value);
 
@@ -985,116 +1017,150 @@
                 monthlyCostOut.textContent = `$${monthlyCost.toLocaleString()} / mo`;
             }
 
-            hoursRange.addEventListener('input', calculateBottleneck);
-            rateRange.addEventListener('input', calculateBottleneck);
-            calculateBottleneck();
+            if (hoursRange && rateRange) {
+                hoursRange.addEventListener('input', calculateBottleneck);
+                rateRange.addEventListener('input', calculateBottleneck);
+                calculateBottleneck();
+            }
 
             // Form Validation & Submission Handler
             const leadForm = document.getElementById('lead-form');
             const modal = document.getElementById('confirmation-modal');
             const closeModalBtn = document.getElementById('close-modal-btn');
             const copySummaryBtn = document.getElementById('copy-summary-btn');
+            const emailInput = document.getElementById('email');
+            const hiddenReplyTo = document.getElementById('hidden_replyto');
 
             let lastSubmittedData = {};
 
-            leadForm.addEventListener('submit', function(e) {
-                e.preventDefault();
+            if (emailInput && hiddenReplyTo) {
+                emailInput.addEventListener('input', function() {
+                    hiddenReplyTo.value = emailInput.value;
+                });
+            }
 
-                // Clear errors
-                document.getElementById('err-name').classList.add('hidden');
-                document.getElementById('err-business').classList.add('hidden');
-                document.getElementById('err-email').classList.add('hidden');
-                document.getElementById('err-problem').classList.add('hidden');
+            if (leadForm) {
+                leadForm.addEventListener('submit', function(e) {
+                    // Hide previous errors
+                    document.getElementById('err-name').classList.add('hidden');
+                    document.getElementById('err-business').classList.add('hidden');
+                    document.getElementById('err-email').classList.add('hidden');
+                    document.getElementById('err-problem').classList.add('hidden');
 
-                const fullName = document.getElementById('full_name').value.trim();
-                const businessName = document.getElementById('business_name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const phone = document.getElementById('phone').value.trim();
-                const website = document.getElementById('business_website').value.trim();
-                const businessType = document.getElementById('business_type').value;
-                const teamSize = document.getElementById('team_size').value;
-                const problemDesc = document.getElementById('problem_desc').value.trim();
-                const blockersDesc = document.getElementById('blockers_desc').value.trim();
-                const contactPref = document.querySelector('input[name="contact_pref"]:checked').value;
+                    const fullName = document.getElementById('full_name').value.trim();
+                    const businessName = document.getElementById('business_name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const website = document.getElementById('business_website').value.trim();
+                    const businessType = document.getElementById('business_type').value;
+                    const teamSize = document.getElementById('team_size').value;
+                    const problemDesc = document.getElementById('problem_desc').value.trim();
+                    const blockersDesc = document.getElementById('blockers_desc').value.trim();
+                    const contactPref = document.querySelector('input[name="contact_pref"]:checked') ? document.querySelector('input[name="contact_pref"]:checked').value : 'Email';
 
-                let isValid = true;
+                    let isValid = true;
 
-                if (!fullName) {
-                    document.getElementById('err-name').classList.remove('hidden');
-                    isValid = false;
-                }
+                    if (!fullName) {
+                        document.getElementById('err-name').classList.remove('hidden');
+                        isValid = false;
+                    }
 
-                if (!businessName) {
-                    document.getElementById('err-business').classList.remove('hidden');
-                    isValid = false;
-                }
+                    if (!businessName) {
+                        document.getElementById('err-business').classList.remove('hidden');
+                        isValid = false;
+                    }
 
-                if (!email || !email.includes('@')) {
-                    document.getElementById('err-email').classList.remove('hidden');
-                    isValid = false;
-                }
+                    if (!email || !email.includes('@')) {
+                        document.getElementById('err-email').classList.remove('hidden');
+                        isValid = false;
+                    }
 
-                if (!problemDesc) {
-                    document.getElementById('err-problem').classList.remove('hidden');
-                    isValid = false;
-                }
+                    if (!problemDesc) {
+                        document.getElementById('err-problem').classList.remove('hidden');
+                        isValid = false;
+                    }
 
-                if (!isValid) return;
+                    if (!isValid) {
+                        e.preventDefault();
+                        return;
+                    }
 
-                // Save last submitted payload
-                lastSubmittedData = {
-                    fullName,
-                    businessName,
-                    email,
-                    phone,
-                    website,
-                    businessType,
-                    teamSize,
-                    problemDesc,
-                    blockersDesc,
-                    contactPref,
-                    timestamp: new Date().toISOString()
-                };
+                    // Store submission payload
+                    lastSubmittedData = {
+                        fullName,
+                        businessName,
+                        email,
+                        phone,
+                        website,
+                        businessType,
+                        teamSize,
+                        problemDesc,
+                        blockersDesc,
+                        contactPref,
+                        timestamp: new Date().toISOString()
+                    };
 
-                // Store submission in localStorage for persistence
-                try {
-                    const existingInquiries = JSON.parse(localStorage.getItem('mcgrew_inquiries') || '[]');
-                    existingInquiries.push(lastSubmittedData);
-                    localStorage.setItem('mcgrew_inquiries', JSON.stringify(existingInquiries));
-                } catch(err) {
-                    console.log('Local storage save skipped', err);
-                }
+                    try {
+                        const existingInquiries = JSON.parse(localStorage.getItem('mcgrew_inquiries') || '[]');
+                        existingInquiries.push(lastSubmittedData);
+                        localStorage.setItem('mcgrew_inquiries', JSON.stringify(existingInquiries));
+                    } catch(err) {
+                        console.log('Local storage save skipped', err);
+                    }
 
-                // Populate modal details
-                document.getElementById('confirm-name').textContent = fullName;
-                document.getElementById('confirm-business').textContent = businessName;
-                document.getElementById('confirm-method').textContent = contactPref;
-                document.getElementById('confirm-summary').textContent = problemDesc;
+                    // If submitting via AJAX to prevent page redirect:
+                    e.preventDefault();
 
-                // Show Modal
-                modal.classList.remove('hidden');
-            });
+                    const formData = new FormData(leadForm);
+                    
+                    // Attempt async submission to form provider
+                    fetch(leadForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        // Show modal confirmation on completion
+                        document.getElementById('confirm-name').textContent = fullName;
+                        document.getElementById('confirm-business').textContent = businessName;
+                        document.getElementById('confirm-method').textContent = contactPref;
+                        document.getElementById('confirm-summary').textContent = problemDesc;
+                        modal.classList.remove('hidden');
+                    }).catch(error => {
+                        // Direct fallback via Mailto in case backend endpoint is unreachable
+                        const mailtoLink = `mailto:Mark@McGrewBusinessSolutions.com?subject=${encodeURIComponent('Inquiry from ' + fullName + ' (' + businessName + ')')}&body=${encodeURIComponent(
+                            `Name: ${fullName}\nBusiness: ${businessName}\nEmail: ${email}\nPhone: ${phone}\nWebsite: ${website}\nType: ${businessType}\nTeam Size: ${teamSize}\nContact Pref: ${contactPref}\n\nProblem Statement:\n${problemDesc}\n\nBlockers:\n${blockersDesc}`
+                        )}`;
+                        window.location.href = mailtoLink;
+                    });
+                });
+            }
 
-            closeModalBtn.addEventListener('click', function() {
-                modal.classList.add('hidden');
-                leadForm.reset();
-            });
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    modal.classList.add('hidden');
+                    if (leadForm) leadForm.reset();
+                });
+            }
 
-            copySummaryBtn.addEventListener('click', function() {
-                const textToCopy = `INQUIRY SUMMARY (McGrew Business Solutions)\nName: ${lastSubmittedData.fullName}\nBusiness: ${lastSubmittedData.businessName}\nEmail: ${lastSubmittedData.email}\nPhone: ${lastSubmittedData.phone || 'N/A'}\nPreferred Contact: ${lastSubmittedData.contactPref}\n\nProblem Statement:\n${lastSubmittedData.problemDesc}`;
-                
-                const tempTextArea = document.createElement('textarea');
-                tempTextArea.value = textToCopy;
-                document.body.appendChild(tempTextArea);
-                tempTextArea.select();
-                try {
-                    document.execCommand('copy');
-                    alert('Submission details copied to clipboard!');
-                } catch(err) {
-                    console.error('Failed to copy', err);
-                }
-                document.body.removeChild(tempTextArea);
-            });
+            if (copySummaryBtn) {
+                copySummaryBtn.addEventListener('click', function() {
+                    const textToCopy = `INQUIRY SUMMARY (McGrew Business Solutions)\nName: ${lastSubmittedData.fullName}\nBusiness: ${lastSubmittedData.businessName}\nEmail: ${lastSubmittedData.email}\nPhone: ${lastSubmittedData.phone || 'N/A'}\nPreferred Contact: ${lastSubmittedData.contactPref}\n\nProblem Statement:\n${lastSubmittedData.problemDesc}`;
+                    
+                    const tempTextArea = document.createElement('textarea');
+                    tempTextArea.value = textToCopy;
+                    document.body.appendChild(tempTextArea);
+                    tempTextArea.select();
+                    try {
+                        document.execCommand('copy');
+                        alert('Submission details copied to clipboard!');
+                    } catch(err) {
+                        console.error('Failed to copy', err);
+                    }
+                    document.body.removeChild(tempTextArea);
+                });
+            }
 
         });
     </script>
